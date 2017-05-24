@@ -1,7 +1,9 @@
+package singleton;
+
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-//        SingtonTest.testPerformance();
+//        singleton.SingtonTest.testPerformance();
           SingtonTest.testSingleton();
     }
 }

@@ -1,9 +1,11 @@
+package singleton;
+
 /**
  * Created by liuhuiyi on 2017/5/24.
  */
 public class Singleton {
     private Singleton(){
-        System.out.println("Singleton is create");
+        System.out.println("singleton.Singleton is create");
     }
     private static Singleton instance = null;
     public static synchronized Singleton getInstance(){
@@ -12,6 +14,6 @@ public class Singleton {
         return instance;
     }
     public static void createString(){
-        System.out.println("create string in Singleton");
+        System.out.println("create string in singleton.Singleton");
     }
 }

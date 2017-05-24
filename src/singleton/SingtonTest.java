@@ -1,3 +1,5 @@
+package singleton;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -16,7 +18,7 @@ public class SingtonTest extends Thread {
         public void run() {
             System.out.println("try to get instance");
             for (int i = 0; i < 100000; i++)
-                //Singleton.getInstance();
+                //singleton.Singleton.getInstance();
                 Singleton.getInstance();
             System.out.println("spend:" + (System.currentTimeMillis() - begintime));
         }
@@ -37,6 +39,6 @@ public class SingtonTest extends Thread {
 
     public static void testSingleton() {
         StaticSingleton.createString();
-       // StaticSingleton.getInstance();
+       // singleton.StaticSingleton.getInstance();
     }
 }
