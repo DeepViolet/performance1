@@ -5,8 +5,10 @@ public class Singleton {
     private Singleton(){
         System.out.println("Singleton is create");
     }
-    private static Singleton instance = new Singleton();
-    public static Singleton getInstance(){
+    private static Singleton instance = null;
+    public static synchronized Singleton getInstance(){
+        if(null == instance)
+            instance = new Singleton();
         return instance;
     }
     public static void createString(){
