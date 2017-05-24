@@ -19,7 +19,7 @@ public class SingtonTest extends Thread {
             System.out.println("try to get instance");
             for (int i = 0; i < 100000; i++)
                 //singleton.Singleton.getInstance();
-                Singleton.getInstance();
+                StaticSingleton.getInstance();
             System.out.println("spend:" + (System.currentTimeMillis() - begintime));
         }
     }
